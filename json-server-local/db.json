@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Boodschappenlijstje",
-      "type": "success",
+      "type": "warning",
       "publishDate": "17/08/2021"
     },
     {
@@ -15,27 +15,20 @@
     {
       "id": 3,
       "title": "Wat moet ik inpakken",
-      "type": "warning",
+      "type": "info",
       "publishDate": "5/2/2021"
     },
     {
-      "id": 4,
-      "title": "bsdfdfb",
-      "type": "warning",
-      "content": "",
-      "publishDate": "2021-11-28T01:29:51.685Z"
-    },
-    {
-      "id": 5,
-      "title": "yyyy",
-      "type": "danger",
+      "id": 6,
+      "title": "Boekenlijstje",
+      "type": "success",
       "content": "",
       "publishDate": "28/11/2021"
     },
     {
-      "id": 6,
-      "title": "boekenlijstje",
-      "type": "success",
+      "id": 7,
+      "title": "Poetsen",
+      "type": "danger",
       "content": "",
       "publishDate": "28/11/2021"
     }
@@ -47,84 +40,6 @@
       "description": "",
       "date": "",
       "status": ""
-    },
-    {
-      "id": 2,
-      "list_id": "1",
-      "description": "Eieren",
-      "status": "done"
-    },
-    {
-      "id": 3,
-      "list_id": "1",
-      "description": "Boter",
-      "status": "todo"
-    },
-    {
-      "id": 4,
-      "list_id": "1",
-      "description": "Bloem",
-      "status": "todo"
-    },
-    {
-      "id": 5,
-      "list_id": "2",
-      "description": "Todo app maken",
-      "status": "done"
-    },
-    {
-      "id": 6,
-      "list_id": "2",
-      "description": "Ai studeren",
-      "status": "done"
-    },
-    {
-      "id": 7,
-      "list_id": "3",
-      "description": "Broek",
-      "status": "done"
-    },
-    {
-      "id": 8,
-      "list_id": "3",
-      "description": "Handdoek",
-      "status": "done"
-    },
-    {
-      "id": 9,
-      "list_id": "3",
-      "description": "Tshirt",
-      "status": "todo"
-    },
-    {
-      "id": 10,
-      "list_id": "3",
-      "description": "Schoenen",
-      "status": "done"
-    },
-    {
-      "id": 11,
-      "list_id": "3",
-      "description": "Laptop",
-      "status": "done"
-    },
-    {
-      "id": 12,
-      "list_id": "3",
-      "description": "Trui",
-      "status": "done"
-    },
-    {
-      "id": 13,
-      "list_id": "3",
-      "description": "Sokken",
-      "status": "done"
-    },
-    {
-      "id": 14,
-      "list_id": "3",
-      "description": "Tandenborstel ",
-      "status": "todo"
     },
     {
       "id": 15,
@@ -169,20 +84,6 @@
       "status": ""
     },
     {
-      "id": 24,
-      "list_id": 4,
-      "description": "vvvvvaaa",
-      "date": "",
-      "status": ""
-    },
-    {
-      "id": 25,
-      "list_id": 4,
-      "description": "zerzerzer",
-      "date": "",
-      "status": "done"
-    },
-    {
       "id": 26,
       "list_id": 5,
       "description": "xvcxcvxcvxcvxcv",
@@ -190,32 +91,186 @@
       "status": "todo"
     },
     {
-      "id": 27,
-      "list_id": 6,
-      "description": "Harry potter",
-      "date": "",
-      "status": "todo"
-    },
-    {
-      "id": 28,
-      "list_id": 1,
-      "description": "Melk",
-      "date": "",
+      "id": 31,
+      "list_id": 2,
+      "description": "Todo app maken",
+      "date": "28/11/2021 19:37",
       "status": "done"
     },
     {
-      "id": 29,
-      "list_id": 1,
-      "description": "koekjes",
-      "date": "",
+      "id": 32,
+      "list_id": 2,
+      "description": "Az-204 examen",
+      "date": "28/11/2021 19:37",
       "status": "todo"
     },
     {
-      "id": 30,
-      "list_id": 3,
-      "description": "Pennentas",
-      "date": "",
+      "id": 33,
+      "list_id": 2,
+      "description": "AI deeplearning",
+      "date": "28/11/2021 19:38",
+      "status": "done"
+    },
+    {
+      "id": 34,
+      "list_id": 1,
+      "description": "Eieren",
+      "date": "28/11/2021 19:38",
+      "status": "done"
+    },
+    {
+      "id": 35,
+      "list_id": 1,
+      "description": "Boter",
+      "date": "28/11/2021 19:38",
       "status": "todo"
+    },
+    {
+      "id": 36,
+      "list_id": 1,
+      "description": "Bloem",
+      "date": "28/11/2021 19:38",
+      "status": "done"
+    },
+    {
+      "id": 37,
+      "list_id": 1,
+      "description": "Melk",
+      "date": "28/11/2021 19:38",
+      "status": "done"
+    },
+    {
+      "id": 38,
+      "list_id": 3,
+      "description": "Broek",
+      "date": "28/11/2021 19:39",
+      "status": "done"
+    },
+    {
+      "id": 39,
+      "list_id": 3,
+      "description": "Handdoek",
+      "date": "28/11/2021 19:39",
+      "status": "todo"
+    },
+    {
+      "id": 40,
+      "list_id": 3,
+      "description": "Tshirt",
+      "date": "28/11/2021 19:39",
+      "status": "todo"
+    },
+    {
+      "id": 41,
+      "list_id": 3,
+      "description": "Schoenen",
+      "date": "28/11/2021 19:39",
+      "status": "done"
+    },
+    {
+      "id": 42,
+      "list_id": 3,
+      "description": "Laptop",
+      "date": "28/11/2021 19:39",
+      "status": "done"
+    },
+    {
+      "id": 43,
+      "list_id": 3,
+      "description": "Trui",
+      "date": "28/11/2021 19:39",
+      "status": "done"
+    },
+    {
+      "id": 44,
+      "list_id": 3,
+      "description": "Sokken",
+      "date": "28/11/2021 19:39",
+      "status": "todo"
+    },
+    {
+      "id": 47,
+      "list_id": 4,
+      "description": "Afwas",
+      "date": "28/11/2021 19:42",
+      "status": "done"
+    },
+    {
+      "id": 48,
+      "list_id": 4,
+      "description": "Afstoffen",
+      "date": "28/11/2021 19:42",
+      "status": "done"
+    },
+    {
+      "id": 49,
+      "list_id": 4,
+      "description": "Vloer dweilen",
+      "date": "28/11/2021 19:42",
+      "status": "todo"
+    },
+    {
+      "id": 50,
+      "list_id": 4,
+      "description": "Keren",
+      "date": "28/11/2021 19:42",
+      "status": "done"
+    },
+    {
+      "id": 51,
+      "list_id": 2,
+      "description": "Filmpje opnemen",
+      "date": "28/11/2021 19:48",
+      "status": "todo"
+    },
+    {
+      "id": 52,
+      "list_id": 6,
+      "description": "AngularPro",
+      "date": "28/11/2021 20:04",
+      "status": "done"
+    },
+    {
+      "id": 53,
+      "list_id": 6,
+      "description": "Design patterns",
+      "date": "28/11/2021 20:04",
+      "status": "done"
+    },
+    {
+      "id": 54,
+      "list_id": 6,
+      "description": "Harry Potter",
+      "date": "28/11/2021 20:04",
+      "status": "todo"
+    },
+    {
+      "id": 55,
+      "list_id": 1,
+      "description": "Cornflakes",
+      "date": "28/11/2021 20:09",
+      "status": "todo"
+    },
+    {
+      "id": 56,
+      "list_id": 7,
+      "description": "Dweilen",
+      "date": "28/11/2021 20:43",
+      "status": "done"
+    },
+    {
+      "id": 57,
+      "list_id": 7,
+      "description": "Keren",
+      "date": "28/11/2021 20:43",
+      "status": "done"
+    },
+    {
+      "id": 58,
+      "list_id": 7,
+      "description": "Afstoffen",
+      "date": "28/11/2021 20:45",
+      "status": "done"
     }
   ],
   "profile": {

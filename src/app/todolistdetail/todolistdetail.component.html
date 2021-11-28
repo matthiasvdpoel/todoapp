@@ -18,6 +18,7 @@
                         <tr>
                             <th>#</th>
                             <th>Beschrijving</th>
+                            <th>Datum</th>
                             <th>Status</th>
                             <th>Verwijderen</th>
                         </tr>
@@ -29,6 +30,7 @@
                                 <input type="text" class="form-control" id="todoitem-{{todoitem.id}}"
                                     value="{{todoitem.description}}" (change)="changeDescription($event, todoitem.id)">
                             </td>
+                            <td>{{todoitem.date}}</td>
                             <td class="hidetext">{{todoitem.status}}
                                 <label class="switch {{todoitem.status}}">
                                     <input type="checkbox" [checked]="todoitem.status=='done'"
@@ -36,6 +38,7 @@
                                     <span class="slider round"></span>
                                 </label>
                             </td>
+
                             <td>
                                 <div class="btn-group btn-group-sm">
 

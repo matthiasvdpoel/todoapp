@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TodolistComponent } from './todolist/todolist.component';
-import { TodoitemComponent } from './todoitem/todoitem.component';
+
 import { TodolistdetailComponent } from './todolistdetail/todolistdetail.component';
 import { MenuComponent } from './menu/menu.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -19,7 +19,7 @@ import { DataTablesModule } from 'angular-datatables';
     AppComponent,
     HomeComponent,
     TodolistComponent,
-    TodoitemComponent,
+
     TodolistdetailComponent,
     MenuComponent,
     TodolistFormComponent,

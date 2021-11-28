@@ -1,6 +1,9 @@
+import { formatDate } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { NodeWithI18n } from '@angular/compiler';
 import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { waitForAsync } from '@angular/core/testing';
+import { SelectMultipleControlValueAccessor } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataTableDirective } from 'angular-datatables';
 import { Observable, Subject, Subscription } from 'rxjs';
@@ -48,16 +51,19 @@ export class TodolistdetailComponent implements OnDestroy, OnInit {
 
   constructor(private todolistService: TodolistService, private todolistdetailService: TodolistdetailService, private route: ActivatedRoute, private router: Router, private httpClient: HttpClient) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
 
     this.todolistId = Number(this.route.snapshot.paramMap.get('id'));
     this.todoitemToAdd.list_id = this.todolistId;
-    //this.getTodolist();
+   
     this.getTodolist();
+
+    //volgende lijn wordt niet gebruikt
     this.httpClient.get<Todoitem[]>("http://localhost:3000/items?list_id=" + this.todolistId)
       .subscribe(
         data => {
           console.log(data);
+
           this.todoitems2 = data as Todoitem[];
           this.dtTrigger.next();
         });
@@ -69,7 +75,7 @@ export class TodolistdetailComponent implements OnDestroy, OnInit {
       paging: false,
       searching: false,
       columnDefs: [
-        { orderable: false, targets: 3 },
+        { orderable: false, targets: 4 },
         { orderable: true, targets: '_all' }
 
       ],
@@ -100,7 +106,10 @@ export class TodolistdetailComponent implements OnDestroy, OnInit {
   deleteTodoItem(id: number) {
     this.deleteItem$ = this.todolistdetailService.deleteTodoitem(id).subscribe(result => {
       //all went well
-      this.getTodolist();
+      let currentUrl = this.router.url;
+      this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+        this.router.navigate([currentUrl]);
+      });
 
     }, error => {
       //error
@@ -145,6 +154,8 @@ export class TodolistdetailComponent implements OnDestroy, OnInit {
 
   onSubmit() {
     this.isSubmitted = true;
+
+    this.todoitemToAdd.date = formatDate(new Date(), 'dd/MM/yyyy HH:mm', 'en') as unknown as string;
 
     this.postTodoitem$ = this.todolistdetailService.postTodoitem(this.todoitemToAdd).subscribe(result => {
       //all went well
