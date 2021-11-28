@@ -1,0 +1,10 @@
+<!-- In home worden de verchillende beschikbare todolijstjes weergegeven. Hier kan je er aan maken en verwijderen. Door een lijst te selecteren ga je naar de detail pagina -->
+<div class="row">
+    <app-todolist class="col-sm-12 col-md-12, col-lg-6, col-xl-4  d-flex align-items-stretch"
+        *ngFor="let todolist of (todolists$ | async)" [todolist]="todolist"></app-todolist>
+</div>
+<div clsass="row">
+    <!-- Tooltip is niet verder geimplementeerd -->
+    <button type="button" data-toggle="tooltip" data-placement="left" title="Maak een nieuwe todo lijst"
+        class="btn btn-success addBtn" (click)="add()"><i class="fas fa-plus"></i></button>
+</div>

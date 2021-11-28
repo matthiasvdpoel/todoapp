@@ -1,0 +1,75 @@
+<!-- In de todolistdetail pagina worden alle todoitems van dit lijstje weergegeven. Deze kunnen bewerkt worden -->
+<div class="card border-{{todolist.type}}" style="width: 100%;">
+    <div class="card-header ">
+        <h5 class="card-title">{{todolist.title}}</h5>
+        <div class="edittodolist">
+            <button type="button" class="btn btn-success" (click)="edit(todolist.id)"><i
+                    class="fas fa-edit"></i></button>
+            <button type="button" class="btn btn-danger" (click)="delete(todolist.id)"><i
+                    class="far fa-trash-alt"></i></button>
+        </div>
+    </div>
+    <div class="card-body ">
+
+        <form (ngSubmit)="onSubmit()" #listitemForm="ngForm">
+            <div class="table-responsive">
+                <table datatable class="table" id="datatable" [dtTrigger]="dtTrigger" [dtOptions]="dtOptions">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Beschrijving</th>
+                            <th>Status</th>
+                            <th>Verwijderen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let todoitem of (todoitems$ | async)">
+                            <td>{{todoitem.id}}</td>
+                            <td class="hidetext">{{todoitem.description}}
+                                <input type="text" class="form-control" id="todoitem-{{todoitem.id}}"
+                                    value="{{todoitem.description}}" (change)="changeDescription($event, todoitem.id)">
+                            </td>
+                            <td class="hidetext">{{todoitem.status}}
+                                <label class="switch {{todoitem.status}}">
+                                    <input type="checkbox" [checked]="todoitem.status=='done'"
+                                        (change)="changeStatus(todoitem.id)">
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                            <td>
+                                <div class="btn-group btn-group-sm">
+
+                                    <a class="btn btn-outline-danger" (click)='deleteTodoItem(todoitem.id)'>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="alert alert-danger" role="alert" *ngIf="errorMessage">
+                    {{errorMessage}}
+                </div>
+                <table class="table">
+                    <tr>
+
+                        <td colspan="1"><input type="text" class="form-control" id="description" name="description"
+                                placeholder="Beschrijving ..." [(ngModel)]="todoitemToAdd.description"
+                                #description="ngModel" required></td>
+
+
+                        <td><button type="submit" class="btn btn-{{todolist.type}}"
+                                [disabled]="!listitemForm.form.valid "><i class="fas fa-plus"></i></button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+    <div class=" card-footer text-muted">
+        Aangemaakt: {{todolist.publishDate}}
+    </div>
+</div>

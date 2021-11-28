@@ -1,0 +1,224 @@
+{
+  "todolists": [
+    {
+      "id": 1,
+      "title": "Boodschappenlijstje",
+      "type": "success",
+      "publishDate": "17/08/2021"
+    },
+    {
+      "id": 2,
+      "title": "Huiswerk",
+      "type": "danger",
+      "publishDate": "14/09/2021"
+    },
+    {
+      "id": 3,
+      "title": "Wat moet ik inpakken",
+      "type": "warning",
+      "publishDate": "5/2/2021"
+    },
+    {
+      "id": 4,
+      "title": "bsdfdfb",
+      "type": "warning",
+      "content": "",
+      "publishDate": "2021-11-28T01:29:51.685Z"
+    },
+    {
+      "id": 5,
+      "title": "yyyy",
+      "type": "danger",
+      "content": "",
+      "publishDate": "28/11/2021"
+    },
+    {
+      "id": 6,
+      "title": "boekenlijstje",
+      "type": "success",
+      "content": "",
+      "publishDate": "28/11/2021"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "list_id": 0,
+      "description": "",
+      "date": "",
+      "status": ""
+    },
+    {
+      "id": 2,
+      "list_id": "1",
+      "description": "Eieren",
+      "status": "done"
+    },
+    {
+      "id": 3,
+      "list_id": "1",
+      "description": "Boter",
+      "status": "todo"
+    },
+    {
+      "id": 4,
+      "list_id": "1",
+      "description": "Bloem",
+      "status": "todo"
+    },
+    {
+      "id": 5,
+      "list_id": "2",
+      "description": "Todo app maken",
+      "status": "done"
+    },
+    {
+      "id": 6,
+      "list_id": "2",
+      "description": "Ai studeren",
+      "status": "done"
+    },
+    {
+      "id": 7,
+      "list_id": "3",
+      "description": "Broek",
+      "status": "done"
+    },
+    {
+      "id": 8,
+      "list_id": "3",
+      "description": "Handdoek",
+      "status": "done"
+    },
+    {
+      "id": 9,
+      "list_id": "3",
+      "description": "Tshirt",
+      "status": "todo"
+    },
+    {
+      "id": 10,
+      "list_id": "3",
+      "description": "Schoenen",
+      "status": "done"
+    },
+    {
+      "id": 11,
+      "list_id": "3",
+      "description": "Laptop",
+      "status": "done"
+    },
+    {
+      "id": 12,
+      "list_id": "3",
+      "description": "Trui",
+      "status": "done"
+    },
+    {
+      "id": 13,
+      "list_id": "3",
+      "description": "Sokken",
+      "status": "done"
+    },
+    {
+      "id": 14,
+      "list_id": "3",
+      "description": "Tandenborstel ",
+      "status": "todo"
+    },
+    {
+      "id": 15,
+      "list_id": 0,
+      "description": "gfdfgdfgdfg",
+      "date": "",
+      "status": ""
+    },
+    {
+      "id": 16,
+      "list_id": 0,
+      "description": "gfdfgdfgdfg",
+      "date": "",
+      "status": ""
+    },
+    {
+      "id": 17,
+      "list_id": 0,
+      "description": "xcvxcv",
+      "date": "",
+      "status": ""
+    },
+    {
+      "id": 21,
+      "list_id": 0,
+      "description": "",
+      "date": "",
+      "status": ""
+    },
+    {
+      "id": 22,
+      "list_id": 0,
+      "description": "",
+      "date": "",
+      "status": ""
+    },
+    {
+      "id": 23,
+      "list_id": 0,
+      "description": "",
+      "date": "",
+      "status": ""
+    },
+    {
+      "id": 24,
+      "list_id": 4,
+      "description": "vvvvvaaa",
+      "date": "",
+      "status": ""
+    },
+    {
+      "id": 25,
+      "list_id": 4,
+      "description": "zerzerzer",
+      "date": "",
+      "status": "done"
+    },
+    {
+      "id": 26,
+      "list_id": 5,
+      "description": "xvcxcvxcvxcvxcv",
+      "date": "",
+      "status": "todo"
+    },
+    {
+      "id": 27,
+      "list_id": 6,
+      "description": "Harry potter",
+      "date": "",
+      "status": "todo"
+    },
+    {
+      "id": 28,
+      "list_id": 1,
+      "description": "Melk",
+      "date": "",
+      "status": "done"
+    },
+    {
+      "id": 29,
+      "list_id": 1,
+      "description": "koekjes",
+      "date": "",
+      "status": "todo"
+    },
+    {
+      "id": 30,
+      "list_id": 3,
+      "description": "Pennentas",
+      "date": "",
+      "status": "todo"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

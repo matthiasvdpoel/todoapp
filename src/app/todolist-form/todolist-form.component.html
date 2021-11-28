@@ -1,0 +1,37 @@
+<h1 *ngIf="isAdd">Maak een nieuwe todolijst</h1>
+<h1 *ngIf="isEdit">Todolijst aanpassen</h1>
+<div class="alert alert-danger" role="alert" *ngIf="isSubmitted && errorMessage">
+    {{errorMessage}}
+</div>
+<form (ngSubmit)="onSubmit()" #todolistForm="ngForm">
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="title">Titel</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Titel"
+                    [(ngModel)]="todolist.title" #title="ngModel" required>
+                <div [hidden]="title.valid || title.pristine" class="alert alert-danger">Titel is vereist</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="type">Kleur</label>
+
+                <select [(ngModel)]="todolist.type" id="type" class="form-control no-outline" #type="ngModel" required
+                    name="type">
+                    <option selected value="success" class="bg-success">Groen</option>
+                    <option value="danger" class="bg-danger">Rood</option>
+                    <option value="warning" class="bg-warning">Geel</option>
+                    <option value="info" class="bg-info">Blauw</option>
+                    <option value="dark" class="bg-dark">Zwart</option>
+                    <option value="seconday" class="bg-seconday">Grijs</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" *ngIf="isAdd"
+        [disabled]="!todolistForm.form.valid || isSubmitted">Add</button>
+    <button type="submit" class="btn btn-primary" *ngIf="isEdit"
+        [disabled]="!todolistForm.form.valid || isSubmitted">Save</button>
+</form>

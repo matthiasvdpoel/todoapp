@@ -1,0 +1,24 @@
+<div class="card border-{{todolist.type}}" style="width: 100%;">
+    <div class="card-header bg-{{todolist.type}}">
+        <h5 class="card-title">{{todolist.title}}</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">{{todolist.content}}</p>
+        <div>
+
+            <ul class="list">
+
+                <li *ngFor="let todoitem of (todoitems$ | async)">
+                    {{todoitem.description}} <span *ngIf="todoitem.status=='done'" class="checkmark">✓</span>
+                    <!-- *ngIf="todoitem.status=='done'" -->
+                    <div class="lines"></div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="card-footer text-muted">
+        <p>Aangemaakt: {{todolist.publishDate}} </p> <a href="/todolist/{{todolist.id}}" class="card-link">Naar
+            lijstje</a>
+    </div>
+</div>
